@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className='col-span-7 place-self-center text-center sm:text-left'>
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className='text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-pink-600'>
-              Hello, I'm{" "}
+              Hello, I´m{" "}
             </span>
             <TypeAnimation
             sequence={[
@@ -28,19 +28,19 @@ const HeroSection = () => {
 
             repeat={Infinity}/>
           </h1>
-          <p className='text-white text-base sm:text-lg mb-6  lg:text-xl'>
+          <p className='text-[#ADB7BE] text-base sm:text-lg mb-6  lg:text-xl'>
             A Junior Full Stack Developer who loves solving problems with programming...
           </p>
           <div className=''>
-            <Button className='mb-5'>
+            <button className='px-6 py-3 text-white mr-4 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500  via-purple-500 to-pink-500'>
               Hire Me
-            </Button>
-            <Button
-              variant="secondary"
-              className='px-1 py-1 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white '
+            </button>
+            <button
+              
+              className='px-1 text-white py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500'
             >
              <span className='block bg-[#121212] hover:bg-slate-800 rounded-full py-2 md:px-auto px-3'>Download CV</span> 
-            </Button>
+            </button>
           </div>
         </div>
         <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
