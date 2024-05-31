@@ -1,12 +1,13 @@
 import type { Config } from "tailwindcss"
+const colors=require("tailwindcss/colors");
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx,jsx}',
-    './components/**/*.{ts,tsx,jsx}',
-    './app/**/*.{ts,tsx,jsx}',
-    './src/**/*.{ts,tsx,jsx}',
+    './pages/**/*.{ts,tsx,jsx,js}',
+    './components/**/*.{ts,tsx,jsx,js}',
+    './app/**/*.{ts,tsx,jsx,js}',
+    './src/**/*.{ts,tsx,jsx,js}',
   ],
   prefix: "",
   theme: {
@@ -33,6 +34,11 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    colors:{
+      ...colors,
+      primary:colors.purple,
+      secondary:colors.pink,
+    }
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config

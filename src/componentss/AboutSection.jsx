@@ -15,7 +15,7 @@ const TAB_DATA = [
                 <li>Next.js</li>
                 <li>PostgreSQL</li>
                 <li>Express</li>
-                <li></li>
+
             </ul>
         )
     }
