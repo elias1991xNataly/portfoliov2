@@ -11,8 +11,8 @@ const projectsData = [
     description: "Coffee Ecommerce shop",
     image: "/projects/Project_1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/elias1991xNataly/HighAltitudeCoffee",
+    previewUrl: "https://cafedealturaeas.netlify.app"
   },
   {
     id: 2,
@@ -20,8 +20,8 @@ const projectsData = [
     description: "Sorting, Adding and Removing",
     image: "/projects/Actors.png",
     tag: ["All"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/elias1991xNataly/2oproyectoReacteas",
+    previewUrl: "https://contactseas.netlify.app/"
   },
   {
     id: 3,
@@ -29,8 +29,8 @@ const projectsData = [
     description: "",
     image: "/projects/Countries.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/"
+    gitUrl: "https://github.com/elias1991xNataly/3erproyectoreact",
+    previewUrl: "https://wiki-countrieseas.netlify.app/"
   }
 ]
 
