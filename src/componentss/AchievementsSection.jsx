@@ -25,7 +25,7 @@ const achievementsList = [
     },
     {
         metric: "SContracts",
-        value: "0"
+        value: "1"
     }
 ]
 
