@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from 'react';
+
+import CodewarsIcon from "../../public/images/codewars-svgrepo-com.svg";
 import GithubIcon from "../../public/images/github-icon.svg";
 import LinkedinIcon from "../../public/images/linkedin-icon.svg";
 import Link from "next/link";
@@ -21,11 +23,14 @@ const EmailSection = () => {
                     Whether you have a question or just want to say hi, I´ll try my best to get back to you!
                 </p>
                 <div className='socials flex flex-row gap-2'>
-                    <Link href="github.com">
+                    <Link target='_blank' href="github.com">
                         <Image src={GithubIcon} alt='Github Icon' />
                     </Link>
-                    <Link href="linkedin.com">
+                    <Link target='_blank' href="linkedin.com">
                         <Image src={LinkedinIcon} alt='Linkedin Icon' />
+                    </Link>
+                    <Link target='_blank' href="https://www.codewars.com/users/EliasxNataly">
+                        <Image src={CodewarsIcon} alt='Codewars Icon' />
                     </Link>
                 </div>
             </div>
