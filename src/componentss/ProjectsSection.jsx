@@ -31,6 +31,16 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/elias1991xNataly/3erproyectoreact",
     previewUrl: "https://wiki-countrieseas.netlify.app/"
+  },
+  {
+    id: 4,
+    title: "1st Exercise Of Smart Contract",
+    description: "Smart contract with the functionality of adding tasks and assigning difficulty to it",
+    image: "/smartcontracts/1erejercicio.png",
+    tag: ["All", "SmartContracts"],
+    gitUrl: "https://codeshare.io/J7Q3lR",
+    previewUrl: ""
+
   }
 ]
 
@@ -65,6 +75,11 @@ const ProjectsSection = () => {
         <ProjectTag
           name="Web"
           isSelected={tag === "Web"}
+          onClick={handleTagChange}
+        />
+        <ProjectTag
+          name="SmartContracts"
+          isSelected={tag === "SmartContracts"}
           onClick={handleTagChange}
         />
       </div>
