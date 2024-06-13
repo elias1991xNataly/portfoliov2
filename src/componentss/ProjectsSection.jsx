@@ -19,7 +19,7 @@ const projectsData = [
     title: "Actors Api",
     description: "Sorting, Adding and Removing",
     image: "/projects/Actors.png",
-    tag: ["All"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/elias1991xNataly/2oproyectoReacteas",
     previewUrl: "https://contactseas.netlify.app/"
   },
