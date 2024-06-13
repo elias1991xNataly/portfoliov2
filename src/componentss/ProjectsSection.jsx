@@ -42,6 +42,16 @@ const projectsData = [
     previewUrl: ""
 
   }
+  ,
+  {
+    id: 5,
+    title: "Natacion Muchos Peces",
+    description: "Static WebPage for one of my clients. They are professionals with 11 years of experience in teaching swimming to kids in ages between 2 and 6. ",
+    image: "/projects/NatacionMuchosPeces.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/elias1991xNataly/muchospecesnextjs",
+    previewUrl: "https://muchospecesnextjs-kd9527aof-elias-projects-4c76079e.vercel.app"
+  }
 ]
 
 const ProjectsSection = () => {
