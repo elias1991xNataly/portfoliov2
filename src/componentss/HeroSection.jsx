@@ -45,6 +45,10 @@ const HeroSection = () => {
             </button>
             <button
 
+              
+              onClick={() => {
+                window.open('/EliasCV.pdf', '_blank')
+              }}
               className='px-1 text-white py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500'
             >
               <span className='block bg-[#121212] hover:bg-slate-800 rounded-full py-2 md:px-auto px-3'>Download CV</span>
