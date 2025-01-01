@@ -1,8 +1,10 @@
 "use client";
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+
+// Tags a incluir: Vue, Nuxt, Next, React, Angular, Astro, Docker, 
 
 const projectsData = [
   {
@@ -12,7 +14,8 @@ const projectsData = [
     image: "/projects/Project_1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/elias1991xNataly/HighAltitudeCoffee",
-    previewUrl: "https://cafedealturaeas.netlify.app"
+    previewUrl: "https://cafedealturaeas.netlify.app",
+    //React
   },
   {
     id: 2,
@@ -21,7 +24,8 @@ const projectsData = [
     image: "/projects/Actors.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/elias1991xNataly/2oproyectoReacteas",
-    previewUrl: "https://contactseas.netlify.app/"
+    previewUrl: "https://contactseas.netlify.app/",
+    //React
   },
   {
     id: 3,
@@ -30,29 +34,33 @@ const projectsData = [
     image: "/projects/Countries.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/elias1991xNataly/3erproyectoreact",
-    previewUrl: "https://wiki-countrieseas.netlify.app/"
+    previewUrl: "https://wiki-countrieseas.netlify.app/",
+    //React
   },
   {
     id: 4,
     title: "1st Exercise Of Smart Contract",
-    description: "Smart contract with the functionality of adding tasks and assigning difficulty to it",
+    description:
+      "Smart contract with the functionality of adding tasks and assigning difficulty to it",
     image: "/smartcontracts/1erejercicio.png",
     tag: ["All", "SmartContracts"],
     gitUrl: "https://codeshare.io/J7Q3lR",
-    previewUrl: ""
-
-  }
-  ,
+    previewUrl: "",
+    //React
+  },
   {
     id: 5,
     title: "Natacion Muchos Peces",
-    description: "Static WebPage for one of my clients. They are professionals with 11 years of experience in teaching swimming to kids in ages between 2 and 6. ",
+    description:
+      "Static WebPage for one of my clients. They are professionals with 11 years of experience in teaching swimming to kids in ages between 2 and 6. ",
     image: "/projects/NatacionMuchosPeces.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/elias1991xNataly/muchospecesnextjs",
-    previewUrl: "https://muchospecesnextjs-kd9527aof-elias-projects-4c76079e.vercel.app"
-  }
-]
+    previewUrl:
+      "https://muchospecesnextjs-kd9527aof-elias-projects-4c76079e.vercel.app",
+  },
+  // NextJS
+];
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -70,13 +78,14 @@ const ProjectsSection = () => {
   const cardVariants = {
     initial: { y: 50, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-  }
+  };
 
-    ;
   return (
     <section>
-      <h2 className='text-center text-4xl font-bold text-white mt-4'>My Projects</h2>
-      <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+      <h2 className="text-center text-4xl font-bold text-white mt-4">
+        My Projects
+      </h2>
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           name="All"
           isSelected={tag === "All"}
@@ -93,8 +102,8 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
         />
       </div>
-      <ul className='grid md:grid-cols-3 gap-8 md:gap-12'>
-        {filteredProjects.map((project, index) =>
+      <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
+        {filteredProjects.map((project, index) => (
           <motion.li
             transition={{ duration: 0.3, delay: index * 0.4 }}
             ref={ref}
@@ -103,7 +112,6 @@ const ProjectsSection = () => {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
           >
-
             <ProjectCard
               key={project.id}
               title={project.title}
@@ -113,10 +121,10 @@ const ProjectsSection = () => {
               previewUrl={project.previewUrl}
             />
           </motion.li>
-        )}
+        ))}
       </ul>
     </section>
-  )
-}
+  );
+};
 
 export default ProjectsSection;
