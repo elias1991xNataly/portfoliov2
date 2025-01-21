@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
@@ -43,7 +43,7 @@ const projectsData = [
     description:
       "Smart contract with the functionality of adding tasks and assigning difficulty to it",
     image: "/smartcontracts/1erejercicio.png",
-    tag: ["All", "SmartContracts"],
+    tag: ["All", "SCnt"],
     gitUrl: "https://codeshare.io/J7Q3lR",
     previewUrl: "",
     //React
@@ -66,10 +66,16 @@ const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   const handleTagChange = (newTag) => {
     setTag(newTag);
   };
+
+  const [isClient, setIsClient] = useState(false);
+  console.log("🚀 ~ ProjectsSection ~ isClient:", isClient);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
