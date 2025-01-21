@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-// Tags a incluir: Vue, Nuxt, Next, React, Angular, Astro, Docker, 
+// Tags a incluir: Vue, Nuxt, Next, React, Angular, Astro, Docker,
 
 const projectsData = [
   {
@@ -12,7 +12,7 @@ const projectsData = [
     title: "Cafe de altura",
     description: "Coffee Ecommerce shop",
     image: "/projects/Project_1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "React"],
     gitUrl: "https://github.com/elias1991xNataly/HighAltitudeCoffee",
     previewUrl: "https://cafedealturaeas.netlify.app",
     //React
@@ -22,7 +22,7 @@ const projectsData = [
     title: "Actors Api",
     description: "Sorting, Adding and Removing",
     image: "/projects/Actors.png",
-    tag: ["All", "Web"],
+    tag: ["All", "React"],
     gitUrl: "https://github.com/elias1991xNataly/2oproyectoReacteas",
     previewUrl: "https://contactseas.netlify.app/",
     //React
@@ -32,7 +32,7 @@ const projectsData = [
     title: "Countries Api",
     description: "",
     image: "/projects/Countries.png",
-    tag: ["All", "Web"],
+    tag: ["All", "React"],
     gitUrl: "https://github.com/elias1991xNataly/3erproyectoreact",
     previewUrl: "https://wiki-countrieseas.netlify.app/",
     //React
@@ -54,7 +54,7 @@ const projectsData = [
     description:
       "Static WebPage for one of my clients. They are professionals with 11 years of experience in teaching swimming to kids in ages between 2 and 6. ",
     image: "/projects/NatacionMuchosPeces.png",
-    tag: ["All", "Web"],
+    tag: ["All", "NextJs"],
     gitUrl: "https://github.com/elias1991xNataly/muchospecesnextjs",
     previewUrl:
       "https://muchospecesnextjs-kd9527aof-elias-projects-4c76079e.vercel.app",
@@ -92,13 +92,33 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
         />
         <ProjectTag
-          name="Web"
-          isSelected={tag === "Web"}
+          name="React"
+          isSelected={tag === "React"}
+          onClick={handleTagChange}
+        />
+        <ProjectTag
+          name="NextJs"
+          isSelected={tag === "NextJs"}
           onClick={handleTagChange}
         />
         <ProjectTag
           name="SmartContracts"
           isSelected={tag === "SmartContracts"}
+          onClick={handleTagChange}
+        />
+        <ProjectTag
+          name="VueJs"
+          isSelected={tag === "VueJs"}
+          onClick={handleTagChange}
+        />
+        <ProjectTag
+          name="AngularJs"
+          isSelected={tag === "AngularJs"}
+          onClick={handleTagChange}
+        />
+        <ProjectTag
+          name="Dapps"
+          isSelected={tag === "Dapps"}
           onClick={handleTagChange}
         />
       </div>

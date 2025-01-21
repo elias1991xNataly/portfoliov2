@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -38,9 +39,14 @@ const HeroSection = () => {
             programming...
           </p>
           <div className="gap-3">
-            <button className="px-6 py-3 text-white mr-4 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500  via-purple-500 to-pink-500">
-              Hire Me
-            </button>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/elias-alfonso-soto-2a3765177"
+            >
+              <button className="px-6 py-3 text-white mr-4 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500  via-purple-500 to-pink-500">
+                Hire Me
+              </button>
+            </Link>
             <button
               onClick={() => {
                 window.open("/EliasCV.pdf", "_blank");
